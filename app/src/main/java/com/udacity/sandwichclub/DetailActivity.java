@@ -82,7 +82,7 @@ public class DetailActivity extends AppCompatActivity {
         ingredients_tv = (TextView) findViewById(R.id.ingredients_tv);
         if (sandwich.getIngredients() !=null && !sandwich.getIngredients().isEmpty()){
             for ( int i =0; i<sandwich.getIngredients().size(); i++) {
-                ingredients_tv.append(sandwich.getIngredients().get(i));
+                ingredients_tv.append(sandwich.getIngredients().get(i) + "\n");
             }
         } else {
             ingredients_tv.setVisibility( View.GONE);
